@@ -23,9 +23,6 @@ appointementsRouter.post(
   appointmentsController.create,
 )
 
-appointementsRouter.get(
-  '/provider-schedule',
-  providerAppointmentsController.index,
-)
+appointementsRouter.get('/me', providerAppointmentsController.index)
 
 export default appointementsRouter
